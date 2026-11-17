@@ -1,0 +1,13 @@
+Git上传文件到GitHub 8个步骤
+1. 打开Git Bash，进入要存放项目的文件夹
+2. git clone 仓库地址   # 克隆远程仓库到本地（第一次拉取仓库用）
+3. cd 仓库名            # 进入仓库文件夹
+4. 把需要上传的文件放到这个文件夹里
+5. git add .            # 将所有改动加入暂存区
+6. git commit -m "提交说明"  # 提交到本地仓库，引号里写本次改动备注
+7. git push             # 推送到GitHub远程仓库
+8. 打开GitHub仓库网页，刷新页面，查看文件是否上传成功
+
+补充说明：
+- 警告 LF will be replaced by CRLF：Windows换行符提示，不用处理，不影响上传
+- 只上传单个文件：可以把 git add . 改成 git add 文件名.txt 
